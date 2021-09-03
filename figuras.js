@@ -1,29 +1,28 @@
 // Cuadrado
-const lado = 5;
-let area = lado * lado;
-let perimetro = lado * 4;
+let areaCuadrado = (lado) => lado * lado;
+let perimetroCuadrado = (lado) => lado * 4;
 
 console.group("Cuadrado");
-console.log(`Area = ${area}cm2`);
-console.log(`Perimetro = ${perimetro}`);
+console.log(`Area = ${areaCuadrado(5)}cm2`);
+console.log(`Perimetro = ${perimetroCuadrado(5)}cm`);
 console.groupEnd();
 
 // Triangulo
-let [base,altura,ladoTriangulo] = [10,5,6];
-let areaCuadrado = base * altura;
-let perimetroTriangulo = base + (ladoTriangulo * 2);
+let areaTriangulo = (base,altura) => (base*altura)/2;
+let perimetroTriangulo = (base,lados) => base + (lados * 2);
+
 console.group("Triangulo");
-console.log(`Area = ${areaCuadrado}cm2`);
-console.log(`Perimetro = ${perimetroTriangulo}`);
+console.log(`Area = ${areaTriangulo(10,15)}cm2`);
+console.log(`Perimetro = ${perimetroTriangulo(10,12)}cm`);
 console.groupEnd();
 
 // Circulo
-let radio = 5;
-let areaCirculo = Math.PI * Math.pow(radio,2);
-let perimetroCirculo = 2 * Math.PI * radio;
-let circunferencia = 2*Math.PI*radio
+let areaCirculo = (radio) => Math.PI * Math.pow(radio,2);
+let perimetroCirculo = (radio) => 2 * Math.PI * radio;
+let circunferencia = (radio) => 2 * Math.PI * radio;
+
 console.group("Circulo");
-console.log(`Area = ${areaCirculo}cm2`);
-console.log(`Perimetro = ${perimetroCirculo}`);
-console.log(`Circunferencia ${circunferencia}`);
+console.log(`Area = ${areaCirculo(2)}cm2`);
+console.log(`Perimetro = ${perimetroCirculo(2)}`);
+console.log(`Circunferencia ${circunferencia(2)}`);
 console.groupEnd();
