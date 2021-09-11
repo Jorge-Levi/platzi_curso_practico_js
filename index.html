@@ -7,7 +7,22 @@
     <title>Perimetros y Areas</title>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
+    <header>
+        <h1>Calculando area de un triangulo isoceles</h1>
+        <p>Se calcula el area de un triangulo isoceles</p>
+    </header>
+    <main>
+        <section>
+            <h2>Area de un triangulo isosceles</h2>
+            <form>
+                <label for="ladosATriangulo">Lados A</label>
+                <input type="number" name="ladosATriangulo" id="ladosATriangulo">
+                <label for="ladoBTriangulo">Lado B</label>
+                <input type="number" name="ladoBTriangulo" id="ladoBTriangulo">
+                <button type="submit" onclick="areaTriangulo()" id="inputAreaCuadrado">Calcular Area</button>
+            </form>
+        </section>
+    </main>
     <script src="figuras.js"></script>
 </body>
 </html>
